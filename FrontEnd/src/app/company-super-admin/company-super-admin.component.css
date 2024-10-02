@@ -1,0 +1,190 @@
+body{
+
+    overflow: hidden;
+   }
+   h1{
+       margin: 50px; 
+       text-align: center;  
+      
+   }
+   hr{
+       margin:50px 200px;
+   
+   }
+   .homeBtn{
+       text-align: center;
+   }
+   .btn{
+       margin: 20px;
+       
+   }
+   /* Cameras */
+   
+   #cameras{
+       text-align: center;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap:25px 0;
+      
+      
+   }
+   @media(max-width :1800px){
+     #cameras{
+       grid-template-columns: repeat(1,1fr);
+     }
+   }
+   
+   .screen{
+       
+       border: 1px solid rgba(0, 0, 0, 0.8);
+       width: 920px;
+       height: 516px;
+       margin: auto;
+       overflow: hidden;
+   }
+   
+   .camImg{
+       transform: scale(.5);
+       position: relative;
+       top: -53%;
+       left: -53%;
+      
+   }
+   /* End Cameras */
+   /* Smart Door */
+   #smartDoors{
+       text-align: center;
+       display: grid;
+       grid-template-columns:auto auto;
+       gap: 3rem;
+       margin: 50px;
+      
+   }
+   
+   .doorSwitch{
+      
+       
+   }
+   .Door{
+     /* border-left: 1px solid black; */
+     padding: 30px;
+   
+   }
+   /* End Smart Door */
+   /* refrigerator */
+   .smartRef{
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap:40px 0;
+   
+   }
+   .refState{
+     margin: auto;
+   }
+   #refState{
+     scale: 250%;
+     cursor: pointer;
+   
+   }
+   /* end of refrigerator */
+   
+   /*  */
+   .homeAssistant{
+    
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin: 50px 200px;
+     gap: 1rem 50%;
+     
+   }
+   
+   
+   /*  */
+   .homeBtn{
+     text-align: center;
+     margin: 50px 200px;
+     }
+    
+   
+   
+   
+   
+   /* Switch */
+   
+   #switch1{
+     text-align: center;
+     margin: 100px auto;
+     scale: 200%;
+     width: 50%;
+   }
+   
+   .red{
+       color: red;
+   }
+   .green{
+       color: green;
+   }
+   
+   .switch {
+       position: relative;
+       display: inline-block;
+       width: 60px;
+       height: 34px;
+     }
+     
+     .switch input { 
+       opacity: 0;
+       width: 0;
+       height: 0;
+     }
+     
+     .slider {
+       position: absolute;
+       cursor: pointer;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color:green ;
+   
+       -webkit-transition: .4s;
+       transition: .4s;
+     }
+     
+     .slider:before {
+       position: absolute;
+       content: "";
+       height: 26px;
+       width: 26px;
+       left: 30px;
+       bottom: 4px;
+       background-color: white;
+       -webkit-transition: .4s;
+       transition: .4s;
+     }
+     
+     input:checked + .slider {
+       background-color: red   ;
+     }
+     
+     input:focus + .slider {
+       box-shadow: 0 0 1px green;
+     }
+     
+     input:checked + .slider:before {
+       -webkit-transform: translateX(-26px);
+       -ms-transform: translateX(-26px);
+       transform: translateX(-26px);
+     }
+     
+     /* Rounded sliders */
+     .slider.round {
+       border-radius: 34px;
+     }
+     
+     .slider.round:before {
+       border-radius: 50%;
+     }
+   /* End Switch */
+   

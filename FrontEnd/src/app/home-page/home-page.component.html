@@ -1,0 +1,668 @@
+<div style="height:0px">
+
+  <body style="background-color: #C0E6F2;">
+
+
+    <header>
+
+      <nav class="navbar navbar-dark  navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="/assets/images/logo_50x50.png" alt="" srcset="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/homePage">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/homePage#slideAnc">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/homePage#AttackAnc">CyberAttacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/homePage#partnersAnc">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/homePage#aboutUsAnc">About</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- login -->
+    <div id="loginId" class="logIn" routerLink="/login">
+
+      <img src="/assets/images/customer.jpg" alt="" srcset="">
+      <div>
+        <h1>Are you already a customer?</h1>
+        <p>If you received your login info, click here</p>
+      </div>
+    </div>
+
+
+    <hr style="margin:50px 200px;">
+
+    <span class="anchor" id="slideAnc"></span>
+    <!-- sliders-services -->
+    <section id="sliders">
+
+
+      <!-- <h1 style="text-align:center;">Services</h1> -->
+      <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false"
+        style=" background-color: #FFFFF5;">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="smartHome" routerLink="/Home">
+            <img src="/assets/images/smartHome.jpg" alt="" class="sliderImg">
+            <div class="carousel-caption d-none d-md-block" style="color: black;">
+              <h5 class="sliderText">Smart Home</h5>
+              <p class="sliderText">Secure your connection with you smart home devices</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="smartCompany"  routerLink= "/Company">
+            <img src="/assets/images/smartCompany.jpg" class="sliderImg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Smart Company</h5>
+              <p>Secure your companies from eavesdropping any other IOT threat</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="smartHospital" routerLink="/Hospital">
+            <img src="/assets/images/smartHospital.jpg" class="sliderImg" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="color: black;">
+              <h5 class="sliderText">Smart Hospital</h5>
+              <p class="sliderText">Secure the patients and the hospital from your smart system vulnerabilities</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="smartBank">
+            <img src="/assets/images/smartBank.jpg" class="sliderImg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Smart Bank</h5>
+              <p>Secure transactions and your IOT bank system</p>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon shadow" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon shadow" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <hr style="margin:50px 200px;">
+
+    <!-- Attacks\ Dangers -->
+    <span id="AttackAnc"></span>
+
+    <div id="Attacks">
+      <h1 id="AttackTitle" style="text-align:center">Cyber Attacks</h1>
+      <div id="line">
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack1">
+            <img class="imgAtk" src="/assets/images/Attacks/Eavesdropping-attack_350x200.png" alt="Eavesdropping">
+          </div>
+          <h2>Eavesdropping</h2>
+        </div>
+        <!-- Modal  for attack1 -->
+        <div class="modal fade " id="attack1" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Eavesdropping</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  An eavesdropping attack, also known as a sniffing or snooping attack, is a theft of information as
+                  it is transmitted over a network by a computer, smartphone, or another connected device. The attack
+                  takes advantage
+                  of unsecured network communications to access data as it is being sent or received by its
+                  user.Eavesdropping is a deceptively
+                  mild term. The attackers are usually after sensitive financial and business information that can be
+                  sold for criminal purposes.
+                  There also is a booming trade in so-called spouseware, which allows people to eavesdrop on their loved
+                  ones by tracking their
+                  smartphone use
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack2">
+
+            <img class="imgAtk" src="/assets/images/Attacks/privilege-escalation.png" alt="privilege-escalation"
+              style="position: relative;">
+          </div>
+          <h2>Privilege Escalation</h2>
+
+        </div>
+        <!-- Modal  for attack2 -->
+        <div class="modal fade " id="attack2" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Privilege Escalation</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Privilege escalation is a type of network attack used to gain unauthorized access to systems within a
+                  security perimeter.
+                </p>
+                <p>
+                  Attackers start by finding weak points in an organization’s defenses and gaining access to a system.
+                  In many cases that first point of penetration will not grant attackers with the level of access or
+                  data they need. They will then attempt privilege escalation to gain more permissions or obtain access
+                  to additional, more sensitive systems.
+                </p>
+                <p>
+                  In some cases, attackers attempting privilege escalation find the “doors are wide open” – inadequate
+                  security controls, or failure to follow the principle of least privilege, with users having more
+                  privileges than they actually need. In other cases, attackers exploit software vulnerabilities, or use
+                  specific techniques to overcome an operating system’s permissions mechanism.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack3">
+            <img class="imgAtk"
+              src="/assets/images/Attacks/cyber-security-attackswhat-is-brute-force-attack_1_350x200.png" alt="">
+          </div>
+          <h2>Brute Force</h2>
+
+        </div>
+        <!-- Modal  for attack3 -->
+        <div class="modal fade " id="attack3" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Brute Force </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  A brute force attack is a popular cracking method: by some accounts, brute force attacks accounted for
+                  five percent of confirmed security breaches. A brute force attack involves ‘guessing’ username and
+                  passwords to gain unauthorized access to a system. Brute force is a simple attack method and has a
+                  high success rate.
+                </p>
+                <p>
+                  Some attackers use applications and scripts as brute force tools. These tools try out numerous
+                  password combinations to bypass authentication processes. In other cases, attackers try to access web
+                  applications by searching for the right session ID. Attacker motivation may include stealing
+                  information, infecting sites with malware, or disrupting service.
+                </p>
+                <p>
+                  While some attackers still perform brute force attacks manually, today almost all brute force attacks
+                  today are performed by bots. Attackers have lists of commonly used credentials, or real user
+                  credentials, obtained via security breaches or the dark web. Bots systematically attack websites and
+                  try these lists of credentials, and notify the attacker when they gain access.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack4">
+            <img class="imgAtk" src="/assets/images/Attacks/Malicious-code-injection-attack_350x200.png" alt="">
+          </div>
+          <h2>Malicious Node Injection</h2>
+
+        </div>
+        <!-- Modal  for attack4 -->
+        <div class="modal fade " id="attack4" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Malicious Node Injection</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  In this attack, attacker
+                  physically injects a new malicious node between two or more
+                  nodes. It then modifies the data the passes the wrong
+                  information to the other nodes.The attacker uses the multiple
+                  nodes to perform malicious node injection attack.
+                </p>
+                <p>
+                  The
+                  adversary first inserts a replica of the node B. After that,
+                  inserts other malicious nodes (node M1). Both these nodes
+                  work together to execute the attack. Thus collision is
+                  occurring at the victim node. Because of these, the attacked
+                  node cannot receive/send any packet. Hence, the conclusion of
+                  watchdog nodes might be affected by incorrectly announcing
+                  the attacked node (the legitimate node) as acting maliciously.
+                  To prevent this attack, we use a monitoring verification
+                  (MOVE) scheme. It can check the monitoring node(s)’ result
+                  and correctly identify any malicious behavior. According to
+                  the acknowledgment, the verifier node will decide whether the
+                  node is malicious or not.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="line">
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack5">
+            <img class="imgAtk" src="/assets/images/Attacks/DNS-Hijacking_350x200.png" alt="">
+          </div>
+          <h2>Firmware Hijacking</h2>
+
+        </div>
+        <!-- Modal  for attack5 -->
+        <div class="modal fade " id="attack5" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Firmware attack</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  A firmware attack is any malicious code that enters your device by using a backdoor in the processor’s
+                  software. Backdoors are paths in the code, which allow certain individuals to bypass security and
+                  enter the system. The backdoor normally goes undetected due to its intense complexity, but can result
+                  in serious consequences if exploited by hackers.
+                </p>
+                <p>
+                  A common example of a firmware attack is an unauthorized update on your computer or phone that results
+                  in malware or some other form of cybercriminal activity. This is because many updates include
+                  backdoors with undocumented features or functions that can be used for adverse actions, such as
+                  intercepting data without notice and turning off core functionalities; all while still masquerading
+                  itself as an innocent update process.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack6">
+            <img class="imgAtk" src="/assets/images/Attacks/what-is-ddos-botmaster.png" alt="">
+          </div>
+          <h2>DDoS</h2>
+
+        </div>
+        <!-- Modal  for attack6 -->
+        <div class="modal fade " id="attack6" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">DDos</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of
+                  a targeted server, service or network by overwhelming the target or its surrounding infrastructure
+                  with a flood of Internet traffic.
+                </p>
+                <p>
+                  DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of
+                  attack traffic. Exploited machines can include computers and other networked resources such as IoT
+                  devices.
+                </p>
+                <p>
+                  From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing
+                  regular traffic from arriving at its destination.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack7">
+            <img class="imgAtk" src="/assets/images/Attacks/627254b2a38f7f5bc1712920_Tampering HTTP requests.jpg"
+              alt="">
+          </div>
+          <h2>Physical Tampering</h2>
+
+        </div>
+        <!-- Modal  for attack7 -->
+        <div class="modal fade " id="attack7" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Physical Tampering</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  When a device (e.g., RFID) or any transmission link is enhanced physically, then tampering is
+                  introduced. Confidential and sensitive information can be acquired as the result of tampering.
+                  Research has been done to identify the vulnerabilities in popular physical devices (such as smart
+                  meters, IP cameras, and Amazon Echo). A camera’s password can be acquired by an attacker, regardless
+                  of its length and a configuration that is confidential and sensitive to a particular user. A
+                  physically unclonable function (PUF) is the proposed countermeasure for this attack. The idea of a PUF
+                  was proposed for small-sized IoT devices, in order to exploit the integral instability of integrated
+                  circuits (IC). A PUF uses a challenge-response mechanism, where the physical structure at the micro
+                  level of the device primarily decides the output of the system. Thus, the PUF is an efficient measure
+                  to eliminate attacks such as tampering.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atk-container">
+          <div class="atk rcorners" data-bs-toggle="modal" data-bs-target="#attack8">
+            <img class="imgAtk" src="/assets/images/Attacks/Password-protection-lock-for-business-security.webp" alt="">
+          </div>
+          <h2>Password-Protect </h2>
+
+        </div>
+        <!-- Modal  for attack8 -->
+        <div class="modal fade " id="attack8" data-bs-backdrop="dynamic" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Password-Protect attack</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  A password attack refers to any of the various methods used to maliciously authenticate into
+                  password-protected accounts. These attacks are typically facilitated through the use of software that
+                  expedites cracking or guessing passwords. The most common attack methods include brute forcing,
+                  dictionary attacks, password spraying, and credential stuffing.
+                </p>
+                <p>
+                  These are the most common “front end” attacks, in which malicious actors try to compromise accounts
+                  through login portals. There is another set of attacks that go after the password storage. As
+                  attackers often choose the path of least resistance, it’s critical to protect against both types.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <hr style="margin:50px 200px;">
+    <!-- packages -->
+    <h1>Packages</h1>
+    <section id="packages">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card text-center">
+            <h2 class="card-header">Smart Home Package</h2>
+            <div class="card-body">
+              <h3 class="card-title">$100/Month</h3>
+              <p class="card-text">security system customized specially for your <strong><em>smart home IOT devices to
+                    really feel safe</em>
+                </strong> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center">
+            <h2 class="card-header">Smart Hospital Package</h2>
+            <div class="card-body">
+              <h3 class="card-title">$500/Month</h3>
+              <p class="card-text">security system customized specially for your <strong> <em>nurse system and all your
+                    hospital smart devices </em></strong> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center">
+            <h2 class="card-header">Smart Company Package</h2>
+            <div class="card-body">
+              <h3 class="card-title">$750/Month</h3>
+              <p class="card-text">security system customized specially for your <strong><em>Company smart devices
+                  </em></strong>like: cameras, door ,alarms,...etc </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center">
+            <h2 class="card-header">Smart Bank Package</h2>
+            <div class="card-body">
+              <h3 class="card-title">$1000/Month</h3>
+              <p class="card-text">security system customized specially for your <strong><em>Bank ATMs, Cameras, and
+                    alarms </em></strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-primary w-100 btn-lg" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
+        Apply for package
+      </button>
+     
+
+
+      <!-- application model -->
+      <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Application</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form [formGroup]="validations">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="app-name" formControlName="user"
+                    [(ngModel)]="user.fullName">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Email:</label>
+                  <input type="text" class="form-control" id="app-email" formControlName="email"
+                    [(ngModel)]="user.email">
+                </div>
+                <div class="mb-3">
+                  <div class="dropdown">
+                    <input class="btn btn-outline-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" value={{pack}} formControlName="pack">
+
+
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button" (click)="home()">Smart Home</button></li>
+                      <li><button class="dropdown-item" type="button" (click)="hosp()">Smart Hospital</button></li>
+                      <li><button class="dropdown-item" type="button" (click)="comp()">Smart Company</button></li>
+                      <li><button class="dropdown-item" type="button" (click)="bank()">Smart Bank</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <input type="submit" value="Send" name="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                (click)="send()">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of packages -->
+    <hr>
+    <!-- Partners -->
+    <span class="anchor" id="partnersAnc"></span>
+
+    <h1 style="text-align:center; margin-top: 30px;">Partners</h1>
+    <div class="partners">
+      <img style="margin: auto;" src="/assets/images/partners/icons8-google-300.png" alt="" srcset="">
+      <img style="margin: auto;" src="/assets/images/partners/icons8-apple-logo-300.png" alt="" srcset="">
+      <img style="margin: auto;" src="/assets/images/partners/icons8-amazon-300.png" alt="" srcset="">
+      <img style="margin: auto;" src="/assets/images/partners/icons8-microsoft-300.png" alt="" srcset="">
+      <!-- <table class="partnerTable">
+        <tr style="text-align: center;">
+          <td style="padding: 100px;" class="partnerTd">
+            <h1>Amazon</h1>
+          </td>
+
+        </tr>
+
+      </table>
+      <table class="partnerTable">
+        <tr style="text-align: center;">
+          <td style="padding: 100px;" class="partnerTd">
+            <h1>Google</h1>
+          </td>
+
+        </tr>
+
+      </table>
+      <table class="partnerTable">
+        <tr style="text-align: center;">
+          <td style="padding: 100px;" class="partnerTd">
+            <h1>Apple</h1>
+          </td>
+
+        </tr>
+
+      </table>
+      <table class="partnerTable">
+        <tr style="text-align: center;">
+          <td style="padding: 100px;" class="partnerTd">
+            <h1>Microsoft</h1>
+          </td>
+
+        </tr>
+
+      </table> -->
+
+    </div>
+    <hr>
+    <!-- Testimonials -->
+    <h1>Testimonials</h1>
+    <section id="testimonials">
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">This was one of the best decisions I've made for myself and my home.</h2>
+            <img class="testimonial-image" src="assets/images/profile_50x50.png" alt="lady-profile">
+            <em>ERVIN, CONTROL4 HOMEOWNER</em>
+
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">It is great to feel that you have control over everything with you phone.</h2>
+            <img class="testimonial-image" src="assets/images/profile_50x50.png" alt="lady-profile">
+            <em> STARK, COMPANY'S CEO</em>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <hr>
+
+    <!-- about us-->
+    <span class="anchor" id="aboutUsAnc"></span>
+    <div id="aboutUs" class="aboutUs">
+      <div>
+        <h1 style="margin-top: 20px;">AboutUs</h1>
+        <p>What we are actually aiming for is not how we build up the IoT system,
+          but how to secure the data received from the devices against any type of threats. Also we are trying
+          to design a better network for better connection between the devices. Finally, a better interactive app
+          or website to control the entire IoT environment is our last goal to make it easier for the user to deal
+          with the system and giving him more information of that system.</p>
+      </div>
+      <div class="tFooter">
+        <h1 style="margin-top: 20px;color: #fffff5;">Contact us</h1>
+        <div class="social">
+          <a class="nav-link" href="https://www.facebook.com/"><img src="/assets/images/icons/icons8-facebook-144.png"
+              alt=""></a>
+          <a class="nav-link" href="https://www.linkedin.com/"><img src="/assets/images/icons/icons8-linkedin-144.png"
+              alt=""></a>
+          <a class="nav-link" href="https://www.twitter.com/"><img src="/assets/images/icons/icons8-twitter-144.png"
+              alt=""></a>
+          <a class="nav-link" href="mailto: iot_sec_email@gmail.com"><img
+              src="/assets/images/icons/icons8-gmail-logo-144.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</div>

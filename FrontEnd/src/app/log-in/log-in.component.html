@@ -1,0 +1,40 @@
+<div style="background-color: white; position: absolute; width: 100%;;">
+
+
+<div style="display:flex; margin: 290px 0; ">
+    <fieldset style="margin: auto; padding:100px;border: 1px solid black;"   >
+        <legend style="text-align: center;">UserLogin</legend>
+        <form [formGroup]="validations" (ngSubmit)='submit()' ngNativeValidate>
+            
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input formControlName="user" type="text" name="username" class="form-control"   ></td>
+                
+                    
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input formControlName="pass"  type="password" class="form-control"  ></td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Login" name="submit" > 
+                        <input type="button" value="Home" name="home" id="home" routerLink="/">
+                    </td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td></td>
+                    <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"> Need help?</a></td>
+                </tr>
+             
+                
+            </table>
+            <!-- <div *ngIf="validations.get('user')?.valid" >{{save(validations.get('user'))}}</div> -->
+        </form>
+    </fieldset>
+    
+</div>
+</div>

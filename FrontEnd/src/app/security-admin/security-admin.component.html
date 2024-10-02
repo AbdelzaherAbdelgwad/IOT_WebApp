@@ -1,0 +1,121 @@
+<body>
+  <div class="head">
+    <h1 class="header">
+      Security Administration
+    </h1>
+  </div>
+  <!-- camera -->
+  <div class="title">
+    <h1 style="color:white;">
+      Cameras
+    </h1>
+  </div>
+
+  <div class="containerBody">
+    <a href="http://192.168.1.111/doc/page/login.asp?_1687457980252">
+      <img src="http://192.168.1.3:9911/" alt="cameraLive" srcset="" style="width: 1280px;height: 800px;">
+    </a>
+  </div>
+
+  <hr class="hr">
+
+  <!-- logs -->
+  <div class="title">
+    <h1 style="color:white;">
+      logs
+    </h1>
+  </div>
+
+  <div class="containerBody" style="text-align: left; padding: 35px;">
+    <!-- *ngFor="let log of logs; let i = index" -->
+    <h2 *ngFor="let log of logs; let i = index" style="margin: 15px;"> ({{i+1}}). {{log.command}}</h2>
+    <!-- <h2>{{log.date | date:'full'}}</h2> -->
+
+  </div>
+  <hr class="hr">
+  <!-- ip attacks -->
+  <div class="title">
+    <h1 style="color:white;">
+      Malicious ip table
+    </h1>
+  </div>
+  <div class="containerBody">
+
+    <div class="split_ip">
+      <h2 class="ipHead">Malicious IP</h2>
+      <h2 class="ipHead">Victim Ip</h2>
+    </div>
+
+    <!-- rows -->
+    <div *ngFor="let log of logs; let i = index" class="split_ip">
+      <h3>{{attIpAddress(log.command)}}</h3>
+      <h3>{{victimIpAddress(log.command)}}</h3>
+    </div>
+
+
+
+  </div>
+  <div *ngFor="let log of logs; let i = index">
+    <h2>{{numOfAttacks(log.command)}}</h2>
+  </div>
+  <!-- <div class="split_ip">
+    <h1>Number of port scan attempts: {{portScanCount}}</h1>
+  <h1>Number of dos packets attempts: {{dosAttackCount}}</h1>
+  <h1>Number of ssh login attack attempts: {{cowrieCount}}</h1>
+  <h1>Number of brute force attack attempts: {{bruteForceCount}}</h1>
+
+  </div> -->
+  <hr class="hr">
+  <div class="title">
+    <h1 style="color:white;">
+      Stats of Attacks
+    </h1>
+  </div>
+  <div class="chart" >
+    <canvas class="chart_bar" id="port" height={{portScanCount*1.5}} width="100" style="background-color: red;"></canvas>
+    <canvas class="chart_bar" id="dos" height={{dosAttackCount*1.5}} width="100" style="background-color: green;"></canvas>
+    <canvas class="chart_bar" id="cowrie" height={{cowrieCount*1.5}} width="100" style="background-color: blue;"></canvas>
+    <canvas class="chart_bar" id="brute" height={{bruteForceCount*1.5}} width="100"
+      style="background-color: yellow;"></canvas>
+    <h2>{{portScanCount}}</h2>
+    <h2>{{dosAttackCount}}</h2>
+    <h2>{{bruteForceCount}}</h2>
+    <h2>{{cowrieCount}}</h2>
+    <h3>portScan</h3>
+    <h3>DosAttack</h3>
+    <h3>BruteForce</h3>
+    <h3>CowrieTrap/SSH</h3>
+    <h6>(AllPorts)</h6>
+    <h6>(port-80)</h6>
+    <h6>(port-22)</h6>
+    <h6>(port-2222)</h6>
+  </div>
+
+
+
+
+  <!-- back home button  -->
+
+  <div class="homeBtn">
+    <a id="homePage" class="nav-link " href="">
+      <button class="btn btn-primary btn-lg col-12 ">Home</button>
+    </a>
+  </div>
+  <div class="homeBtn">
+    <a id="homePage" class="nav-link " href="" (click)="logout()">
+      <button class="btn btn-primary btn-lg col-12 ">logout</button>
+    </a>
+  </div>
+
+
+
+
+
+  <!-- <div>
+    <canvas id="myCanvas" width={{portScanCount}} height="100" style="background-color: red;"></canvas>
+
+  </div> -->
+  <script>
+
+  </script>
+</body>

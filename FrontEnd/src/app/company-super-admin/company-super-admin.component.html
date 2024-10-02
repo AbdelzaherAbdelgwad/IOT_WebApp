@@ -1,0 +1,70 @@
+ <!-- cameras -->
+ <h1>Company Super Admin</h1>
+ <hr>
+ <h1>Cameras</h1>
+ <div id="cameras">
+
+   <div class="screen" *ngFor="let cam of cameras">
+     <img class="camImg" src={{cam.link}} alt="" srcset="" *ngIf="cam.name == 'HomeUser'">
+   </div>
+ </div>
+
+ <div id="switch1">
+   <h3>Your cameras are <h3 [ngClass]="switchColor"> {{state}}</h3>
+   </h3>
+   <label id="switch" class="switch">
+     <input type="checkbox" (click)="switched()">
+     <span class="slider round"></span></label>
+ </div>
+ <hr>
+ <!-- end of cameras -->
+ <!-- smart doors -->
+ <h1>Smart Doors</h1>
+ <div id="smartDoors">
+   <div class="frontDoor Door">
+     <h3>Front door is <h3 [ngClass]="this.xLock1? 'green':'red'">{{lock1}}</h3>
+     </h3>
+     <label id="frontDoor" class="switch doorSwitch">
+       <input type="checkbox" (click)="locked1()">
+       <span class="slider round"></span>
+     </label>
+   </div>
+   <div class="Office Door">
+     <h3>Office door is <h3 [ngClass]="this.xLock2? 'green':'red'">{{lock2}}</h3>
+     </h3>
+     <label id="officeDoor" class="switch doorSwitch">
+       <input type="checkbox" (click)="locked2()">
+       <span class="slider round"></span>
+     </label>
+   </div>
+
+ </div>
+
+ <hr>
+ <!-- end of smart doors -->
+ <!-- smartRef -->
+
+ <h1>Smart Refrigerator</h1>
+ <div class="smartRef">
+   <div>
+     <h2>Refrigerator's door is <h2 [ngClass]="this.refLock?'green':'red'">{{refState}}</h2>
+     </h2>
+   </div>
+
+   <div class="refState">
+     <input id="refState" type="checkbox" (click)="refDoor()" [checked]="refLock">
+   </div>
+
+   <h2>Temperature</h2>
+   <h2>8 C</h2>
+
+
+ </div>
+ <hr>
+ 
+ <!-- end of smartRef-->  
+ <div class="homeBtn">
+  <a id="homePage" class="nav-link " href="">
+    <button class="btn btn-primary btn-lg col-12 ">Home</button>
+  </a>
+</div>

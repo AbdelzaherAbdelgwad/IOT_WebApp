@@ -1,0 +1,369 @@
+/* Tags */
+h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+hr {
+  margin: 50px 200px;
+}
+
+
+
+
+/* Header */
+header {
+
+  background-color: #2D5289;
+  font-family: serif;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header h3 {
+
+  margin-right: 3%;
+  margin-bottom: 0;
+  align-self: center;
+
+
+}
+
+header h1 {
+
+  margin-left: 1%;
+  padding: 10px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+
+}
+
+.navbar {
+  width: 100%;
+
+  background-color: #2D5289;
+  /* border-radius: 0 0 10px 10px; */
+  box-shadow: 0 2px 20px black;
+
+}
+
+.navbar-nav {
+  margin-right: 170px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.anchor {
+  position: absolute;
+  display: block;
+  height: 350px;
+  /*same height as header*/
+  margin-top: -100px;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+/* LogIn */
+.logIn {
+  text-align: center;
+  margin: 200px 200px;
+  height: 500px;
+  background-color: #FFFFF5;
+  padding: 50px;
+  display: flex;
+  box-shadow: 10px 10px 5px lightblue;
+  border-radius: 30px;
+}
+
+.logIn img {
+  width: auto;
+  border-radius: 30px 0 0 30px;
+}
+
+@media(max-width:1400px) {
+  .logIn {
+    display: block;
+    height: 100%;
+  }
+
+  .logIn img {
+    width: 100%;
+  }
+}
+
+.logIn div {
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+
+
+
+.logIn:hover {
+  background-color: #ffffc2;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.logIn h1 {
+  font-size: 50px;
+}
+
+/* slider */
+#sliders {
+
+  margin: 50px 100px;
+
+  text-align: center;
+
+}
+
+.shadow {
+  background-color: #222;
+  border-radius: 20px;
+  transform: scale(1.35);
+
+}
+
+#sliders h1 {
+  margin: auto;
+  transform: scale(2);
+}
+
+#sliders .carousel {
+
+  width: 75%;
+  height: auto;
+  margin: auto;
+  box-shadow: 10px 10px 5px lightblue;
+  border-radius: 30px;
+}
+
+#sliders .carousel-item {
+  text-align: center;
+}
+
+#sliders .carousel-item img {
+  margin: auto;
+  width: 100%;
+}
+
+#sliders #carouselExampleCaptions:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
+
+.sliderText {
+  text-shadow: 1px 1px 5px #ffffc2;
+}
+
+.sliderImg {
+  border-radius: 30px;
+}
+
+/* end of sliders (services) */
+.aboutUs {
+  margin: 50px 10%;
+  text-align: justify;
+}
+
+/* Attacks */
+
+#Attacks {
+  margin: 200px;
+
+}
+
+#line {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+}
+
+@media(max-width:1630px) {
+  #line {
+    display: grid;
+
+    grid-template-columns: auto auto;
+  }
+}
+
+.atk h2 {
+  text-align: center;
+  position: relative;
+  /* top: 50px; */
+  margin: 10px;
+
+
+}
+
+.atk {
+  cursor: pointer;
+  overflow: hidden;
+  width: 350px;
+  height: 200px;
+  background-color: #FFFFF5;
+  margin: 30px;
+}
+
+.atk:hover {
+  transform: scale(1.05);
+}
+
+.atk-container {
+  transform: scale(1);
+  text-align: center;
+
+}
+
+/* End of attacks section */
+/* packages */
+#packages {
+  margin: 50px 200px;
+}
+
+#packages h2 {
+  font-weight: bold;
+}
+
+#packages h3 {
+  font-weight: bold;
+}
+
+.card {
+  margin: 30px;
+}
+
+/* end of packages */
+
+
+
+/* Partners */
+.partners {
+ 
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+
+}
+
+
+@media(max-width: 1164px) {
+  .partners {
+    display: block;
+  }
+}
+
+/* end of partners */
+/* Testimonials */
+#testimonials {
+  height: 400px;
+  text-align: center;
+  margin: 50px 200px;
+  background-color: #FFFFF5;
+  display: flex;
+  border-radius: 30px;
+
+}
+
+#testimonials #carouselExampleControls {
+  margin: auto;
+  padding: 0 10%;
+
+}
+
+.testimonial-text {
+  margin: 30px;
+}
+
+.testimonial-image {
+  margin-right: 30px;
+}
+
+/* end ofTestimonials */
+
+
+/* aboutUs */
+#aboutUs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+#aboutUs h1 {
+
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+}
+
+#aboutUs p {
+  font-size: 20px;
+  margin: 50px 0;
+  margin-right: 50px;
+}
+
+#aboutUs .tFooter {
+  height: 500px;
+  width: 100%;
+  background-color: #2D5289;
+  margin-bottom: 50px;
+  border-radius: 30px;
+
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 1rem;
+  margin: 50px;
+}
+
+
+.rcorners {
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+footer td {
+  margin-right: 10%;
+  padding-right: 100px;
+}
+
+/* End of footer */
+
+/* login.html */
+#home {
+  cursor: pointer;
+}
+
+.mouseOn {
+  height: 600px;
+  width: 750px;
+  background-color: #2D5289;
+  position: absolute;
+  z-index: 1;
+  padding: 5%;
+  border-radius: 30px;
+}
